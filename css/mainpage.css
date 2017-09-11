@@ -248,4 +248,191 @@
 	background-color : #E8E8E8;
 	float : left;
 	margin : 10px 3px;
+	cursor : pointer;
+}
+
+.hot{
+	width: 1000px;
+	height : 403px;
+	margin : auto;
+	margin-top : 30px;
+}
+
+.hot-left{
+	width : 317px;
+	height : 100%;
+	margin-right : 12px;
+	float : left;
+}
+
+.hot-center{
+	margin :  0 12px;
+	width : 318px;
+	height : 100%;
+	float : left;
+}
+
+.hot-right{
+	margin-left: 12px;
+	width : 317px;
+	height : 100%;
+	float : left;
+}
+
+.hot-left-1{
+	width: 100%;
+	height : 190px;
+	margin-bottom: 23px;
+}
+
+.hot-left-2{
+	width : 100%;
+	height : 190px;
+}
+
+.hot-right-1{
+	width: 100%;
+	height : 190px;
+	margin-bottom: 23px;
+}
+
+.hot-right-2{
+	width : 100%;
+	height : 190px;
+}
+
+.hot img{
+	width : 100%;
+	height : 100%;
+}
+
+/* 人气商品 */
+.popular{
+	width : 100%;
+	height : auto;
+	margin-top : 40px;
+
+}
+
+.popular > p{
+	text-align : center;
+	color :#333333;
+	font-size : 12px;
+}
+
+.popular-underline{
+	height : 2px;
+	width : 100%;
+	background-color : #CCCCCC;
+	margin-top : 10px;
+}
+
+.popular-cell{
+	float : left;
+	position : relative;
+	width : 316px;
+	height : 366px;
+	margin-top : 40px;
+}
+
+.cell-top{
+	width : 100%;
+	height : 316px;
+	position : relative;
+	cursor : pointer;
+	overflow: hidden;
+}
+
+.cell-top img{
+	position : absolute;
+	width : 100%;
+	height : 100%;
+	z-index : -10;
+}
+
+.cell-top > p,
+.cell-top > h3{
+	display : none;
+}
+
+.cell-top:hover > p,
+.cell-top:hover > h3{
+	display : block;
+}
+
+.cell-top:hover{
+	background-color : #484848;
+}
+.cell-top:hover img{
+	z-index : 10;
+	opacity : 0.1;
+}
+
+
+.popular-price{
+	color : #0C6EBA;
+	font-size : 22px;
+	font-weight : 800;
+	font-style : italic;
+	margin-top : 20px;
+	margin-left: 20px;
+}
+
+.popular-header{
+	color : white;
+	font-weight : 700;
+	font-size : 14px;
+	margin-top : 100px;
+	text-align : center;
+}
+
+.popular-intro{
+	color : white;
+	font-size : 12px;
+	margin : auto;
+	width : 240px;
+	text-align : center;
+	margin-top : 15px;
+}
+
+.cell-bottom > img{
+	width: 40px;
+	height: 40px;
+	float : left;
+	
+}
+
+.cell-bottom{
+	margin-top : 10px;
+	color : #878787;
+	width : 100%;
+	height : 40px;
+}
+
+.cell-bottom >p{
+	float : left;
+	margin-left : 10px;
+	line-height : 40px;
+}
+
+.cell-bottom-right{
+	float : right;
+	width : 65px;
+	height : 100%;
+}
+
+.cell-bottom-right > p{
+	float : left;
+	line-height : 40px;
+}
+
+.cell-bottom-right > img{
+	float : right;
+	width: 20px;
+	height: 18px;
+	margin-top : 12px;
+}
+
+.left-26{
+	margin-left : 26px;
 }
