@@ -56,6 +56,7 @@
 	background-color : #292F34;
 	left : -130px;
 	display: none;
+	z-index : 100;
 }
 
 .slide-1 > p{
@@ -65,6 +66,7 @@
 }
 
 .slide-2{
+	z-index : 100;
 	display : none;
 	width :  320px;
 	height : 50px;
@@ -93,6 +95,7 @@
 }
 
 .message ul{
+	z-index : 100;
 	display : none;
 	position : absolute;
 	width: 190px;
@@ -128,7 +131,308 @@
 
 /* 开始做主体部分 */
 
+/* 主题小导航 */
 .main{
-	width : 78%;
+	width : 1000px;
 	height : 100%;
+	margin : auto;
+}
+.main-nav{
+	width: 100%;
+	height : 53px;
+}
+.main-nav > a{
+	float : left;
+	width: 118px;
+	height: 49px;
+	border-bottom : 4px solid #EDEDED;
+	line-height : 49px;
+	color : black;
+}
+
+.main-nav > a:hover{
+	border-bottom: 4px solid #25292E;
+}
+
+.main-nav > .main-nav-center{
+	padding-right : 43px;
+	text-align: center;
+}
+
+.main-nav > .main-nav-last{
+	text-align : center;
+}
+
+.main-nav > .form-group{
+	position : relative;
+	float : left;
+	width : 260px;
+	height: 49px;
+	border-bottom : 4px solid #EDEDED;
+}
+
+.form-group input{
+	position : absolute;
+	width: 190px;
+	height: 30px;
+	bottom : 8px;
+	border : 0px;
+	outline: none;
+}
+
+.form-group button{
+	outline : none;
+	position : absolute;
+	border : 0;
+	bottom : 14px;
+	right : 0px;
+	width: 35px;
+	height: 22px;
+	background-image: url("./../images/search.png");
+	background-size: 100% 100%;
+}
+
+/* 43px */
+
+
+/* 接下来是轮播图部分 */
+.carousel{
+	position : relative;
+	width : 100%;
+	height : 507px;
+	margin-top : 32px;
+}
+
+.carousel li {
+	list-style: none;
+}
+
+.train{
+	width: 6000px;
+	height : 100%;
+}
+
+.train li,
+.train img{
+	width : 1000px;
+	height : 100%;
+}
+
+.carouse1 > .carousel-arrows{
+	position : relative;
+	width : 100%;
+	height : 100%;
+}
+
+.arrowLeft{
+	position : absolute;
+	left : 50px;
+	top : 220px;
+}
+
+.arrowRight{
+	position : absolute;
+	right : 50px;
+	top : 220px;
+}
+
+.carousel-dots{
+	width : 104px;
+	height : 32px;
+	margin : auto;
+}
+
+.carousel-dots > span{
+	width : 20px;
+	height : 4px;
+	background-color : #E8E8E8;
+	float : left;
+	margin : 10px 3px;
+	cursor : pointer;
+}
+
+.hot{
+	width: 1000px;
+	height : 403px;
+	margin : auto;
+	margin-top : 30px;
+}
+
+.hot-left{
+	width : 317px;
+	height : 100%;
+	margin-right : 12px;
+	float : left;
+}
+
+.hot-center{
+	margin :  0 12px;
+	width : 318px;
+	height : 100%;
+	float : left;
+}
+
+.hot-right{
+	margin-left: 12px;
+	width : 317px;
+	height : 100%;
+	float : left;
+}
+
+.hot-left-1{
+	width: 100%;
+	height : 190px;
+	margin-bottom: 23px;
+}
+
+.hot-left-2{
+	width : 100%;
+	height : 190px;
+}
+
+.hot-right-1{
+	width: 100%;
+	height : 190px;
+	margin-bottom: 23px;
+}
+
+.hot-right-2{
+	width : 100%;
+	height : 190px;
+}
+
+.hot img{
+	width : 100%;
+	height : 100%;
+}
+
+/* 人气商品 */
+.popular{
+	width : 100%;
+	height : auto;
+	margin-top : 40px;
+
+}
+
+.popular > p{
+	text-align : center;
+	color :#333333;
+	font-size : 12px;
+}
+
+.popular-underline{
+	height : 2px;
+	width : 100%;
+	background-color : #CCCCCC;
+	margin-top : 10px;
+}
+
+.popular-cell{
+	float : left;
+	position : relative;
+	width : 316px;
+	height : 366px;
+	margin-top : 40px;
+}
+
+.cell-top{
+	width : 100%;
+	height : 316px;
+	position : relative;
+	cursor : pointer;
+	overflow: hidden;
+}
+
+.cell-top img{
+	position : absolute;
+	width : 100%;
+	height : 100%;
+	z-index : -10;
+}
+
+.cell-top > p,
+.cell-top > h3{
+	display : none;
+}
+
+.cell-top:hover > p,
+.cell-top:hover > h3{
+	display : block;
+}
+
+.cell-top:hover{
+	background-color : #484848;
+}
+.cell-top:hover img{
+	z-index : 10;
+	opacity : 0.1;
+}
+
+
+.popular-price{
+	color : #0C6EBA;
+	font-size : 22px;
+	font-weight : 800;
+	font-style : italic;
+	margin-top : 20px;
+	margin-left: 20px;
+}
+
+.popular-header{
+	color : white;
+	font-weight : 700;
+	font-size : 14px;
+	margin-top : 100px;
+	text-align : center;
+}
+
+.popular-intro{
+	color : white;
+	font-size : 12px;
+	margin : auto;
+	width : 240px;
+	text-align : center;
+	margin-top : 15px;
+}
+
+.cell-bottom > img{
+	width: 40px;
+	height: 40px;
+	float : left;
+	
+}
+
+.cell-bottom{
+	margin-top : 10px;
+	color : #878787;
+	width : 100%;
+	height : 40px;
+}
+
+.cell-bottom >p{
+	float : left;
+	margin-left : 10px;
+	line-height : 40px;
+}
+
+.cell-bottom-right{
+	float : right;
+	width : 65px;
+	height : 100%;
+}
+
+.cell-bottom-right > p{
+	float : left;
+	line-height : 40px;
+}
+
+.cell-bottom-right > img{
+	float : right;
+	width: 20px;
+	height: 18px;
+	margin-top : 12px;
+}
+
+.left-26{
+	margin-left : 26px;
 }
