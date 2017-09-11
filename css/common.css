@@ -8,11 +8,21 @@ body,
 .app,
 .wrapper{
 	width : 100%;
-	height : 100%;
 }
+<<<<<<< HEAD
 li{
 	list-style: none;
 }
 a{
 	text-decoration:none;
 }
+=======
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style : none;
+}
+>>>>>>> 0e12ed15656bad1a5f678ae67a2e6a601e2fefe6

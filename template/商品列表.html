@@ -5,8 +5,40 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/商品列表.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="./../css/mainpage.css">
 	</head>
+	
 	<body>
+		<div class="nav">
+			<div class="nav-head"></div>
+			<div class="nav-right">
+				<a href="#" class = "nav-login">登陆</a>
+				<a href="#" class = "nav-login">注册</a>
+				<span>|</span>
+				<a href="#" class = "chart">购物车
+					<div class="slide-1">
+						<p>你的购物车暂时没有商品...</p>
+					</div>
+					<div class = "slide-2">
+						<p>快去采购良仓商品吧！</p>
+					</div>
+				</a>
+				<span>|</span>
+				<a href="#" class = "message">消息
+					<ul>
+						<li>
+						<span>动态</span><span class = "nav-span2">0</span></li>
+						<li><span>评论</span><span class = "nav-span2">0</span></li>
+						<li><span>私信</span><span class = "nav-span2">0</span></li>
+						<li><span>粉丝</span><span class = "nav-span2">0</span></li>
+						<li><span>喜欢</span><span class = "nav-span2">0</span></li>
+						<li><span>通知</span><span class = "nav-span2">0</span></li>
+					</ul>
+				</a>
+				<span>|</span>
+				<a href="#">添加良品</a>
+			</div>
+		</div>
 		<div class="bodyer">
 			<ul class="options">
 				<li>良仓</li>
@@ -16,29 +48,58 @@
 				<li>所有商品</li>
 				<li class="arrow">></li>
 			</ul>
-			<ul class="new_product">
-				<li id="frist_product"><a href="">新品</a></li>
-				<li><a href="">家居</a></li>
-				<li><a href="">家具</a></li>
-				<li><a href="">文具</a></li>
-				<li><a href="">数码</a></li>
-				<li><a href="">玩乐</a></li>
-				<li><a href="">厨卫</a></li>
-				<li><a href="">美食</a></li>
-				<li><a href="">男装</a></li>
-				<li><a href="">女装</a></li>
-				<li><a href="">童装</a></li>
-				<li><a href="">鞋包</a></li>
-				<li><a href="">配饰</a></li>
-				<li><a href="">美护</a></li>
-				<li><a href="">户外</a></li>
-				<li><a href="">植物</a></li>
-				<li><a href="">图书</a></li>
-				<li><a href="">艺术</a></li>
-				<li><a href="">礼物</a></li>
-				<li><a href="">推荐</a></li>
-				<li><a href="">品牌</a></li>
+			<div class = "osm_bar">
+				<ul class="new_product">
+					<li><a id = "new_products" href="">新品</a></li>
+					<li><a href="">家居</a></li>
+					<li><a href="">家具</a></li>
+					<li><a href="">文具</a></li>
+					<li><a href="">数码</a></li>
+					<li><a href="">玩乐</a></li>
+					<li><a href="">厨卫</a></li>
+					<li><a href="">美食</a></li>
+					<li><a href="">男装</a></li>
+					<li><a href="">女装</a></li>
+					<li><a href="">童装</a></li>
+					<li><a href="">鞋包</a></li>
+					<li><a href="">配饰</a></li>
+					<li><a href="">美护</a></li>
+					<li><a href="">户外</a></li>
+					<li><a href="">植物</a></li>
+					<li><a href="">图书</a></li>
+					<li><a href="">艺术</a></li>
+					<li><a href="">礼物</a></li>
+					<li><a href="">推荐</a></li>
+					<li><a href="">品牌</a></li>
+				</ul>
+				<div class="screening">
+					价格筛选
+					<span class="triangles"></span>
+					<ul class="prices">
+						<li><a class="change_color" href="">全部</a></li>
+						<li><a href="">0-300</a></li>
+						<li><a href="">301-1000</a></li>
+						<li><a href="">1001-2000</a></li>
+						<li><a href="">2001-4000</a></li>
+						<li><a id = "last_one" href="">4001以上</a></li>
+					</ul>
+				</div>
+			</div>	
+			<ul class="our_shop">
+				<li id = "firsts">
+					<div class="commodity_picture">
+						<a href="" class = "instruction"></a>
+						<img class="big_graph" src="../images/254098.jpg"/>
+						
+					</div>
+					<div class="bar">
+						<a href="" class="brands"><img class="insets" src="../images/489.jpg"/>读小库</a>
+						<a href="" class ="heart_shaped"></a>
+					</div>
+				</li>
+				<li></li>
+				<li></li>
 			</ul>
-		</div>
+		</div>		
 	</body>
 </html>
