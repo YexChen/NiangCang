@@ -56,6 +56,7 @@
 	background-color : #292F34;
 	left : -130px;
 	display: none;
+	z-index : 100;
 }
 
 .slide-1 > p{
@@ -65,6 +66,7 @@
 }
 
 .slide-2{
+	z-index : 100;
 	display : none;
 	width :  320px;
 	height : 50px;
@@ -93,6 +95,7 @@
 }
 
 .message ul{
+	z-index : 100;
 	display : none;
 	position : absolute;
 	width: 190px;
@@ -128,7 +131,92 @@
 
 /* 开始做主体部分 */
 
+/* 主题小导航 */
 .main{
-	width : 78%;
+	width : 1000px;
+	height : 100%;
+	margin : auto;
+	overflow: hidden;
+}
+.main-nav{
+	width: 100%;
+	height : 53px;
+}
+.main-nav > a{
+	float : left;
+	width: 118px;
+	height: 49px;
+	border-bottom : 4px solid #EDEDED;
+	line-height : 49px;
+	color : black;
+}
+
+.main-nav > a:hover{
+	border-bottom: 4px solid #25292E;
+}
+
+.main-nav > .main-nav-center{
+	padding-right : 43px;
+	text-align: center;
+}
+
+.main-nav > .main-nav-last{
+	text-align : center;
+}
+
+.main-nav > .form-group{
+	position : relative;
+	float : left;
+	width : 260px;
+	height: 49px;
+	border-bottom : 4px solid #EDEDED;
+}
+
+.form-group input{
+	position : absolute;
+	width: 190px;
+	height: 30px;
+	bottom : 8px;
+	border : 0px;
+	outline: none;
+}
+
+.form-group button{
+	outline : none;
+	position : absolute;
+	border : 0;
+	bottom : 14px;
+	right : 0px;
+	width: 35px;
+	height: 22px;
+	background-image: url("./../images/search.png");
+	background-size: 100% 100%;
+}
+
+/* 43px */
+
+
+/* 接下来是轮播图部分 */
+.carousel{
+	position : relative;
+	overflow: hidden;
+	width : 100%;
+	height : 507px;
+	margin-top : 32px;
+}
+
+.carousel li {
+	list-style: none;
+}
+
+.train{
+	width: 6000px;
 	height : 100%;
 }
+
+.train li,
+.train img{
+	width : 1000px;
+	height : 100%;
+}
+
