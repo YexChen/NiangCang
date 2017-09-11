@@ -136,7 +136,6 @@
 	width : 1000px;
 	height : 100%;
 	margin : auto;
-	overflow: hidden;
 }
 .main-nav{
 	width: 100%;
@@ -199,7 +198,6 @@
 /* 接下来是轮播图部分 */
 .carousel{
 	position : relative;
-	overflow: hidden;
 	width : 100%;
 	height : 507px;
 	margin-top : 32px;
@@ -220,3 +218,34 @@
 	height : 100%;
 }
 
+.carouse1 > .carousel-arrows{
+	position : relative;
+	width : 100%;
+	height : 100%;
+}
+
+.arrowLeft{
+	position : absolute;
+	left : 50px;
+	top : 220px;
+}
+
+.arrowRight{
+	position : absolute;
+	right : 50px;
+	top : 220px;
+}
+
+.carousel-dots{
+	width : 104px;
+	height : 32px;
+	margin : auto;
+}
+
+.carousel-dots > span{
+	width : 20px;
+	height : 4px;
+	background-color : #E8E8E8;
+	float : left;
+	margin : 10px 3px;
+}
