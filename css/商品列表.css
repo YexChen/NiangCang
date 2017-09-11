@@ -1,5 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 .bodyer{
 	width: 78%;
 	margin: auto;
-	
+	border: 1px solid red;
+
+}
+/*       良仓>商品       */
+.options{
+	height: 76px;
+}
+.options>li{
+	float: left;
+	line-height: 76px;
+	font-size: 14px;
+	color: #666;
+}
+.options>.arrow{
+	color: #bfbfbf;
+	padding:0 7px;
+}
+/*          新品列表             */
+.new_product{
+	width: 840px;
+	float: left;
+}
+.new_product>li{
+	margin-top: 10px;
+	width: 64px;
+	height: 25px;
+	border-bottom: 1px solid #ededed;
+	color: #333333;
+	font-size: 14px;
+	text-align: center;
+	line-height: 25px;
+	padding:6px 20px 5px 0;
+	float: left;
+}
+#frist_product{
+	background: url();
 }
