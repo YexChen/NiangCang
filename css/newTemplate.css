@@ -1,0 +1,25 @@
+.main-nav{
+	position : fixed;
+	background-color: white;
+	top : 56px;
+	z-index : 1000;
+}
+
+.blank{
+	width : 100%;
+	height : 53px;
+	z-index : -10;
+}
+
+.nav-blank{
+	position : relative;
+	display : block;
+	width : 100%;
+	height : 56px;
+}
+
+.nav{
+	position : fixed;
+	top : 0px;
+	z-index : 1000;
+}
