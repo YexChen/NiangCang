@@ -7,11 +7,18 @@
 	<link rel="stylesheet" type="text/css" href="./../css/mainpage.css">
 	<link rel="stylesheet" type="text/css" href="./../css/商品列表.css">
 	<link rel="stylesheet" type="text/css" href="./../css/商品详情页.css">
+	<!--改动区域-->
+	<link rel="stylesheet" type="text/css" href="./../css/newTemplate-bottom.css">
+	<link rel="stylesheet" type="text/css" href="./../css/newTemplate.css">
+	<!--改动完毕-->
 	<title>良仓</title>
 </head>
 <body>
 	<div class="app">
 		<div class="wrapper">
+			<!--第一次整合吸顶效果-->
+			<div class="nav-blank"></div>
+			<!--整合完毕-->
 			<div class="nav">
 				<div class="nav-head"></div>
 				<div class="nav-right">
@@ -42,10 +49,25 @@
 					<a href="#">添加良品</a>
 				</div>
 			</div>
+			<!--新加入的nav下拉栏-->
+			<div class="nav-slide">
+				<div class="nav-slide-left">
+				</div>
+				<div class="nav-slide-right">
+					<img src="./../images/nav/nav-slide-right.jpg">
+					<p>新视线：<span>2017年7月刊</span></p>
+				</div>
+				<div class="nav-slide-bottom">
+					<a href="#">查看所有品牌></a>
+					<a href="#">最新到货></a>
+				</div>	
+			</div>
+
+			<!-- nav下拉栏添加完毕-->
 			<div class="main">
 				<div class="main-nav">
 					<a href="#">首页</a>
-					<a href="#" class = "main-nav-center">商店</a>
+					<a href="#" class = "main-nav-center slide-shop">商店</a>
 					<a href="#" class = "main-nav-center">杂志</a>
 					<a href="#" class = "main-nav-center">分享</a>
 					<a href="#" class = "main-nav-last">达人</a>
@@ -54,6 +76,11 @@
 						<button></button>
 					</div>
 				</div>
+				<!--第一次整合吸顶效果-->
+				<div class="blank">
+				
+				</div>
+				<!--整合完毕-->
 				<!-- 可以往这里面添加内容 -->
 				<div class = "bodyer">
 					<!------左边内容部分------->
@@ -246,5 +273,9 @@
 			<!-- 整合完毕 -->
 		</div>
 	</div>
+	<!-- 整合新的js -->
+	<script type="text/javascript" src = "./../js/animate.js"></script>
+	<script type="text/javascript" src = "./../js/newTemplate.js"></script>
+	<!-- js整合完毕 -->
 </body>
 </html>
