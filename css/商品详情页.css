@@ -1,0 +1,388 @@
+.bodyer{
+	width: 1000px;
+}
+p{
+	font-size: 12px;
+}
+.bodyer_left{
+	width: 725px;
+	float: left;
+}
+.current_position{
+	width: 100%;
+	height: 32px;
+	margin-top: 8px;
+}
+.current_position>a{
+	font-size: 12px;
+	color: #bfbfbf;
+}
+/*       轮播图部分          */
+.goods_details{
+	width: 720px;
+	overflow: hidden;
+	/*height: 437px;*/
+}
+.slideshow{
+	height: 437px;
+	width: 344px;
+	float: left;
+	
+}
+.big_pictures{
+	width: 344px;
+	height: 350px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.big_pictures>ul{
+	position: absolute;
+	height: 437px;
+	width: 2000px;
+	left: 0;
+	top: 0;
+}
+.big_pictures>ul>li{
+	width: 344px;
+	height: 350px;
+	float: left;
+	
+}
+.first_picture{
+	background: url(../images/394131.jpg)no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.second_picture{
+	background: url(../images/394122.jpg)no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.third_picture{
+	background: url(../images/394123.jpg)no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+/*    小图     */
+.thumbnail{
+	width: 249px;
+	height: 65px;
+	margin: 22px auto 0;
+}
+.thumbnail>div{
+	width: 10px;
+	height: 18px;
+	margin-top: 23px;
+	float: left;
+}
+.to_left{
+	background: url(../images/24753.png)no-repeat;
+	margin-right: 3px;
+	background-size: 100% 100%;
+}
+.to_right{
+	background: url(../images/24751.png)no-repeat;
+	margin-left: 10px;
+	background-size: 100% 100%;
+}
+.thumbnail>ul{
+	float: left;
+}
+.thumbnail>ul>li{
+	width: 63px;
+	height: 63px;
+	border: 1px solid transparent;
+	margin-left: 7px;
+	float: left;
+}
+.first_one{
+	background: url(../images/394131.jpg)no-repeat;
+	background-size: 100% 100%;
+}
+.second_one{
+	background: url(../images/394122.jpg)no-repeat;
+	background-size: 100% 100%;
+}
+.third_one{
+	background: url(../images/394123.jpg)no-repeat;
+	background-size: 100% 100%;
+}
+/*   边框样式   */
+.borders{
+	border: 1px solid black;
+}
+/*      右边描述部分      */
+.describe{
+	width: 330px;
+	height: 410px;
+	margin-left: 43px;
+	float: left;
+}
+.like{
+	display: block;
+	width: 40px;
+	height: 13px;
+	font-size: 10px;
+	color: black;
+	background: url(../images/24747.png) no-repeat;
+	text-align: right;
+	background-size:33% ;
+	line-height: 13px;
+	margin-top: 4px;
+}
+.book_title{
+	height: 33px;
+	line-height: 33px;
+	font-size: 22px;
+	color: #878787;
+	margin-top:15px ;
+	font-weight:normal
+}
+.particulars{
+	height: 54px;
+	line-height: 27px;
+	font-size: 18px;
+	color: #333333;
+	margin-top: 2px;
+}
+.money{
+	height: 24px;
+}
+.money>p{
+	width: 40px;
+	font-size: 12px;
+	color: #999999;
+	line-height: 26px;
+	float: left;
+}
+.money>h2{
+	width: 150px;
+	font-size: 14px;
+	color: #1083ff;
+	line-height: 24px;
+}
+.small_icon{
+	height: 14px;	
+	margin-top: 30px;
+	padding-left: 44px;
+}
+.small_icon>p{
+	font-size: 11px;
+	height: 14px;
+	color: #999999;
+	text-align: right;
+	margin-right: 5px;
+	float: left;
+	line-height: 14px;
+}
+.free_shipping{
+	width: 52px;
+	background:url(../images/24690.png)no-repeat;
+	background-size:14px ;
+}
+.original{
+	width: 64px;
+	background:url(../images/24689.png)no-repeat;
+	background-size:12px ;
+}
+.quantity{
+	height: 26px;
+	margin-top: 20px;
+}
+.quantity>p,.plus_minus>p{
+	width: 36px;
+	height: 18px;
+	font-size: 12px;
+	color: #999999;
+	line-height: 18px;
+	float: left;	
+}
+.quantity>input{
+	appearance: none;
+	width: 46px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	color: #999999;
+	border: 1px solid black;
+	background: #dcdcdc;
+	text-align: center;
+}
+.plus_minus{
+	height: 26px;
+	margin-top: 39px;
+}
+.add,.subtraction{
+	width: 11px;
+	height: 11px;
+	border: 1px solid black;
+	appearance: none;
+	font-size: 7px;
+	color: #000000;
+	line-height: 11px;
+	text-align: center;
+	outline:none;
+	background: #FFFFFF;
+}
+.numbers{
+	appearance: none;
+	outline:none;
+	height: 24px;
+	width: 52px;
+	text-align: center;
+	line-height: 52px;
+	color: #000000;
+	font-size: 10px;
+	background: #FFFFFF;
+	border: 1px solid #eeeeee;
+}
+.purchasing{
+	width: 100%;
+	height: 42px;
+	margin-top: 21px;
+	background: #000000;
+	color: #fff;
+	text-align: center;
+	line-height: 42px;
+	font-size: 16px;
+	display: block;
+}
+.chaining{
+	height: 34px;
+	margin-top: 10px;
+}
+.chaining>a{
+	background: #FFFFFF;
+	border: 1px solid black;
+	height: 16px;
+	width: 160px;
+	padding: 8px 0px;
+
+}
+.shopping_cart{
+	float: left;
+}
+.sharing{
+	float: right;
+}
+.chaining>a>p{
+	height: 16px;
+	margin: auto;
+	font-size: 12px;
+	color: black;
+	text-align: right;
+}
+.shopping_cart>p{
+	width: 82px;
+	background: url(../images/24749.png)no-repeat;
+	background-size:16px ;
+}
+
+.sharing>p{
+	width: 45px;
+	background: url(../images/24746.png)no-repeat;
+	background-size:13px ;
+}
+/*   详细介绍    */
+.particula{
+	width: 720px;
+	padding-top: 48px;
+}
+.particula>img{
+	width: 720px;
+}
+.content_introduction{
+	width: 100%;
+	font-size: 12px;
+	margin: 40px 0;
+}
+.format{
+	margin-top: 40px;
+}
+.press{
+	margin-top: 14px;
+}
+.headings{
+	width: 92px;
+	height: 21px;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: right;
+	margin: 35px 0 20px 0;
+	 font-weight:normal
+}
+.heading1{
+	background: url(../images/24830.png)no-repeat;
+	background-size:21px ;
+}
+.trademark{
+	line-height: 24px;
+}
+.heading2{
+	background: url(../images/24829.png)no-repeat;
+	background-size:20px ;
+}
+.paragraph{
+	margin-bottom: 10px;
+}
+.after_sale{
+	width: 98px;
+	height: 25px;
+	margin: 18px 0 43px 0;
+	font-size: 13px;
+	text-align: center;
+	line-height: 25px;
+	border: 1px solid black;
+	box-shadow: #ccc 1px 0 1px;
+	border-radius: 3px;
+	cursor: pointer;
+	position: relative;
+}
+.after_box{
+	position: absolute;
+	width: 655px;
+	height: 345px;
+	top: -354px;
+	left: 0;
+	border: 2px solid #CCCCCC;
+	background: #FFFFFF;
+	font-size: 50px;
+	line-height: 345px;
+	color: #000000;
+	display: none;
+}
+.after_sale:hover .after_box{
+	display: block;
+}
+/*      右边猜你喜欢      */
+.bodyer_right{
+	width: 200px;
+	float: right;
+	margin:40px 4px 0 0;
+}
+.guess{
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+.glad{
+	display: block;
+	width: 200px;
+	height: 294px;
+	margin-bottom: 25px;	
+}
+.glad>img{
+	width: 200px;
+}
+.likes{
+	margin: 10px 0 8px 0;
+	line-height: 18px;
+	color: black;
+}
+.the_title{
+	margin-bottom: 8px;
+	color: #CCCCCC;
+}
+.worth{
+	color: #3193f3;
+}
