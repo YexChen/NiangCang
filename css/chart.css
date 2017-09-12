@@ -1,4 +1,222 @@
-.chart-banner{
+
+.char-header{
+	margin : 50px 350px;
+	width : 300px;
+	height : 50px;
+}
+
+.char-header > p{
+	float : left;
+	padding : 0px 48px;
+	font-size : 13px;
+	border-left : 1px solid black;
+	border-right : 1px solid black;
+}
+
+.temp-no-right{
+	border-right: 0px !important;
+}
+
+.ordering{
+	color : #6393B4;
+}
+
+.delivery{
+	position : relative;
 	width : 100%;
+	height : auto;
+	overflow: hidden;
+	font-size : 13px;
+}
+
+.delivery > p{
+	margin-bottom: 10px;
+}
+
+.deli-left{
+	position : absolute;
+	top : 140px;
+}
+
+.deli-right{
+	position : absolute;
+	top : 140px;
+	right : 0px;
+}
+
+.chart-address{
+	width: 225px;
+	height: 175px;
+	float : left;
+	border : 2px solid #5B8DB5;
+	margin : 30px 15px;
+}
+
+.address-top{
+	width : 200px;
+	height : 40px;
+	border-bottom: 2px solid #EEEEEE;
 	margin : auto;
+}
+
+.address-top > p{
+	padding-top : 16px;
+}
+
+.top-p1{
+	float : left;
+}
+
+.top-p2{
+	float : right;
+}
+
+.address-center{
+	height : 75px;
+	width: 200px;
+	margin : auto;
+}
+
+.address-center>p{
+	font-size : 12px;
+	color : #999999;
+}
+
+.center-p1{
+	margin-top : 10px;
+}
+
+.center-p2{
+	margin-top : 2px;
+}
+
+.address-bottom{
+	height: 35px;
+	width: 200px;
+	margin : auto;
+}
+
+.address-bottom > p{
+	float : left;
+	color : #7FAED6;
+	font-size: 13px;
+}
+
+.address-bottom > a{
+	float : right;
+	color : #999999;
+	font-size: 13px;
+	padding : 2px;
+}
+
+.new-address{
+	position : relative;
+	clear : both;
+	width : 100%;
+	height : auto;
+	overflow: hidden;
+}
+
+.new-address>p,
+.new-address>img{
+	vertical-align: center;
+}
+
+.new-address > label{
+	color : #9999A6;
+}
+
+.triangle{
+	position : absolute;
+   	width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid #9999A6;
+    z-index: 1000;
+    top : 5px;
+    left : 85px;
+}
+
+/* 表单添加新地址 */
+.new-address-item{
+	float : left;
+	height : 300px;
+	width : 100%;
+	margin : 45px 0px 15px 0px;
+}
+
+.form-group2{
+	width: 500px;
+	height: 40px;
+	font-size : 14px;
+	color : #777;
+}
+
+.form-group2 > input{
+	border: 2px #dedede solid;
+	height : 24px;
+}
+
+.form-group2 > select{
+	height : 24px;
+	margin : 2px 0px;
+}
+
+.form-group2 >label{
+	display : inline-block;
+	width : 80px;
+}
+
+.address-group1 >input {
+	width : 151px;
+}
+
+.address-group2 >select {
+	width : 74px;
+	border: 2px #dedede solid;
+	margin-right : 13px;
+}
+
+.address-group3 >input {
+	width : 399px;
+}
+
+.address-group4 >input {
+	width : 151px;
+}
+
+.address-group5{
+	margin-top : 10px;
+	margin-left: 80px;
+}
+
+.address-group5 > a{
+	padding : 5px 20px;
+	background-color: #7FA6C5;
+	color : white;
+}
+
+/* 底部的下订单结算页面 */
+
+.chart-order{
+	width : 100%;
+	height : 700px;
+}
+
+.order-details{
+	width : 100%;
+	height : 180px;
+}
+
+.order-pro{
+	width : 100%;
+	height : 495px;
+	margin-top : 15px;
+}
+
+/* 接下来是具体的 */
+.order-details-header{
+	width : 100%;
+	height : 30px;
 }
