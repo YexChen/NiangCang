@@ -7,6 +7,61 @@
 	margin:0 auto;
 
 }
+.main-nav{
+	width: 100%;
+	height : 53px;
+}
+.main-nav > a{
+	float : left;
+	width: 118px;
+	height: 49px;
+	border-bottom : 4px solid #EDEDED;
+	line-height : 49px;
+	color : black;
+}
+
+.main-nav > a:hover{
+	border-bottom: 4px solid #25292E;
+}
+
+.main-nav > .main-nav-center{
+	padding-right : 43px;
+	text-align: center;
+}
+
+.main-nav > .main-nav-last{
+	text-align : center;
+}
+
+.main-nav > .form-group{
+	position : relative;
+	float : left;
+	width : 260px;
+	height: 49px;
+	border-bottom : 4px solid #EDEDED;
+}
+
+.form-group input{
+	position : absolute;
+	width: 190px;
+	height: 30px;
+	bottom : 8px;
+	border : 0px;
+	outline: none;
+}
+
+.form-group button{
+	outline : none;
+	position : absolute;
+	border : 0;
+	bottom : 14px;
+	right : 0px;
+	width: 35px;
+	height: 22px;
+	background-image: url("./../images/search.png");
+	background-size: 100% 100%;
+}
+
 /*       良仓>商品       */
 .options{
 	height: 35px;
@@ -251,6 +306,65 @@
     background: #8c8c8d;
     text-align: center;
     line-height: 19px;
+}
+/*         良仓商店         */
+.main-bottom{
+	width : 100%;
+	height : 243px;
+	background-color: #FBFDFE;
+	border-top : 2px solid #F5F5F5;
+}
+
+.main-bottom  a{
+	font-size : 14px;
+	color : #5E5E5E;
+	font-weight : 800;
+	letter-spacing: 1px;
+}
+
+.main-bottom img{
+	display : inline-block;
+	margin-right : 10px;
+}
+
+.bottom-center{
+	width: 245px;
+	height: 32px;
+	margin : 0 auto;
+	margin-top : 40px;
+}
+
+.bottom-bottom{
+	width: 1000px;
+	height : 70px;
+	margin : auto;
+}
+
+.bottom-item{
+	margin : 0px 25px;
+	width : 200px;
+	height : 100%;
+	float : left;
+}
+
+.top-45{
+	margin-top : 45px;
+}
+.bottom-item>img,
+.bottom-item>p,
+.bottom-item>span{
+	float : left;
+}
+
+.bottom-item>p{
+	margin-top: 16px;
+	font-size: 13px;
+	color : black;
+}
+
+.bottom-item>span{
+	font-size : 12px;
+	color : #D8D1CB;
 }
 /*  底部   */
 .footer{
