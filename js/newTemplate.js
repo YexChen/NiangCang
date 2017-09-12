@@ -23,9 +23,11 @@
 // 获取信号变量：
 let nav = document.querySelector(".nav");
 let mainNav = document.querySelector(".main-nav");
+let subNav = document.querySelector(".nav-slide");
 let windowScroll = document.body.scrollTop;
 let currentScroll;
 let intervalTime = 10;
+let slideShop = document.querySelector(".slide-shop");
 
 //绑定事件
 window.onscroll = function(e){
@@ -40,6 +42,9 @@ window.onscroll = function(e){
 		if(!mainNav.isAnimated){
 			animate(mainNav,{"top":56},250,"QuadEaseOut");
 		}
+		if(!subNav.isAnimated){
+			animate(subNav,{"top":109},250,"QuadEaseOut");
+		}
 	}
 	else if(window.scrollY>109){
 		if(!nav.isAnimated){
@@ -48,5 +53,50 @@ window.onscroll = function(e){
 		if(!mainNav.isAnimated){
 			animate(mainNav,{"top":0},250,"QuadEaseIn");
 		}
+		if(!subNav.isAnimated){
+			animate(subNav,{"top":53},250,"QuadEaseIn");
+		}
+	}
+}
+
+//绑定划过事件
+slideShop.onmouseenter = function(){
+	if(!subNav.isAnimated){
+		animate(subNav,{"height":570},250,"QuadEaseOut");
+	}
+}
+
+subNav.onmouseleave = function(){
+	if(!subNav.isAnimated){
+		animate(subNav,{"height":0},250,"QuadEaseOut");
+	}
+}
+
+
+//获取json，来初始化nav下拉栏的列表
+let newRequest = new XMLHttpRequest();
+let json;
+newRequest.onreadystatechange = function(){
+	if(newRequest.readyState == newRequest.DONE){
+		json = JSON.parse(newRequest.responseText);
+		console.log(`${json.data.imageSrc["image"]}`);
+		afterAjax1();
+	}
+}
+
+newRequest.open("GET","./../json/nav-slide-bar.json");
+newRequest.send();
+
+//获取信号变量，添加东西
+function afterAjax1(){
+	let theNav = document.querySelector(".nav-slide-left");
+
+	for(let i=1;i<20;i++){
+		theNav.innerHTML +=`
+				<div class="nav-slide-item">
+					<img src=`+json.data.imageSrc[`image${i}`]+`>
+					<h3>`+json.data.name[`name${i}`]+`</h3>
+				</div>
+		`
 	}
 }

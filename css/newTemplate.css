@@ -21,5 +21,75 @@
 .nav{
 	position : fixed;
 	top : 0px;
-	z-index : 1000;
+	z-index : 10000;
+}
+
+/* 开始下拉栏的添加 */
+.nav-slide{
+	position : fixed;
+	top : 109px;
+	width : 1000px;
+	height : 570px;
+	margin-left : 132px;
+	background-color : white;
+	z-index : 10000;
+	overflow: hidden;
+}
+
+.nav-slide-left{
+	width: 730px;
+	height: 400px;
+	float : left;
+}
+
+.nav-slide-item{
+	float : left;
+	width : 40px;
+	height: 55px;
+	margin : 35px 70px 0px 0px;
+}
+
+.nav-slide-item>img{
+	float : left;
+	width : 40px;
+	height : 40px;
+}
+.nav-slide-item>h3{
+	float : left;
+	font-size : 13px;
+	font-weight : 600;
+	margin-left : 7px;
+}
+
+.nav-slide-right{
+	float : left;
+	width : 260px;
+	height: 290px;
+	margin-left : 10px;
+}
+
+.nav-slide-right > img{
+	width: 230px;
+	height: 230px;
+	margin-top : 40px;
+}
+
+.nav-slide-right >p{
+	font-size : 14px;
+	margin-top : 15px;
+	letter-spacing: 0.2em;
+}
+
+.nav-slide-bottom{
+	clear : both;
+	float : left;
+	margin-top : 20px;
+}
+
+.nav-slide-bottom > a{
+	float : left;
+	color : #666;
+	float : left;
+	margin : 0 30px;
+	font-size : 14px;
 }
