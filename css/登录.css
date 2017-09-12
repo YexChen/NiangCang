@@ -1,0 +1,116 @@
+.the_login{
+	width: 300px;
+	height: 606px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+.big_logo{
+	width: 114px;
+	height: 195px;
+	display: block;
+	margin: 60px auto;
+	background: url(../details/liangcang.png)no-repeat;
+}
+.mobile_phone{
+	width: 300px;
+	height: 24px;
+	margin-top: 66px;
+	padding: 4px 0;
+	border-bottom: 1px solid black;
+}
+.iphone_picture{
+	width: 19px;
+	height: 24px;
+	float: left;
+	margin-right: 5px;
+	background: url(../images/nlphone.png)no-repeat;
+}
+.inputting{
+	height: 24px;
+	width: 120px;
+	font-size: 16px;
+	line-height: 24px;
+	padding-left: 5px;
+	outline:none;
+	border: none;
+	color: #767676;
+}
+.verification_code{
+	height: 24px;
+	margin-top: 24px;
+	width: 300px;
+}
+.Input_box{
+	height: 24px;
+	padding: 4px 0;
+	width: 172px;
+	border-bottom: 1px solid black;
+	float: left;
+	margin-right: 14px;
+}
+.backdrop{
+	width: 16px;
+	height: 20px;
+	padding: 2px;
+	float: left;
+	margin:2px 5px 0 0;
+	background:url(../images/nlcode.png)no-repeat ;
+}
+.auth_code{
+	height: 24px;
+	width: 120px;
+	font-size: 16px;
+	line-height: 24px;
+	padding-left: 5px;
+	outline:none;
+	border: none;
+	color: #767676;
+}
+.acquiring{
+	float: left;
+	width: 112px;
+	height: 42px;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 42px;
+	color: #4f4f4f;
+	font-size: 16px;
+	margin-top: -10px;
+}
+.automatic{
+	height: 16px;
+	margin-top: 36px;
+}
+.automatic_login{
+	height: 12px;
+	margin-top: 2px;
+	float: left;
+	
+}
+.automatic_logins{
+	font-size: 12px;
+	line-height: 16px;
+	float: left;
+}
+.btm{
+	width: 300px;
+	height: 50px;
+	margin-top: 32px;
+	background: #25292e;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+	display: block;
+}
+.mores{
+	margin: 30px auto;
+	line-height: 26px;
+	font-size: 14px;
+	color: black;
+	display: block;
+	width: 100px;
+	text-align: center;
+}
