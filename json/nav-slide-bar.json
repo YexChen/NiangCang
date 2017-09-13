@@ -1,0 +1,46 @@
+{
+	"data":{
+		"imageSrc" : {
+			"image1" : "./../images/nav/1.png",
+			"image2" : "./../images/nav/2.png",
+			"image3" : "./../images/nav/3.png",
+			"image4" : "./../images/nav/4.png",
+			"image5" : "./../images/nav/5.png",
+			"image6" : "./../images/nav/6.png",
+			"image7" : "./../images/nav/7.png",
+			"image8" : "./../images/nav/8.png",
+			"image9" : "./../images/nav/9.png",
+			"image10" : "./../images/nav/10.png",
+			"image11" : "./../images/nav/11.png",
+			"image12" : "./../images/nav/12.png",
+			"image13" : "./../images/nav/13.png",
+			"image14" : "./../images/nav/14.png",
+			"image15" : "./../images/nav/15.png",
+			"image16" : "./../images/nav/16.png",
+			"image17" : "./../images/nav/17.png",
+			"image18" : "./../images/nav/18.png",
+			"image19" : "./../images/nav/19.png"
+		},
+		"name":{
+			"name1" : "家居",
+			"name2" : "家具",
+			"name3" : "文具",
+			"name4" : "数码",
+			"name5" : "玩乐",
+			"name6" : "厨卫",
+			"name7" : "美食",
+			"name8" : "男装",
+			"name9" : "女装",
+			"name10" : "童装",
+			"name11" : "鞋包",
+			"name12" : "配饰",
+			"name13" : "美护",
+			"name14" : "户外",
+			"name15" : "植物",
+			"name16" : "图书",
+			"name17" : "艺术",
+			"name18" : "礼物",
+			"name19" : "推荐"
+		}
+	}
+}

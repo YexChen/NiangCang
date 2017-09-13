@@ -1,0 +1,215 @@
+/*         良仓商店         */
+.main-bottom{
+	width : 100%;
+	height : 243px;
+	background-color: #FBFDFE;
+	border-top : 2px solid #F5F5F5;
+}
+
+.main-bottom  a{
+	font-size : 14px;
+	color : #5E5E5E;
+	font-weight : 800;
+	letter-spacing: 1px;
+}
+
+.main-bottom img{
+	display : inline-block;
+	margin-right : 10px;
+}
+
+.bottom-center{
+	width: 245px;
+	height: 32px;
+	margin : 0 auto;
+	margin-top : 40px;
+}
+
+.bottom-bottom{
+	width: 1000px;
+	height : 70px;
+	margin : auto;
+}
+
+.bottom-item{
+	margin : 0px 25px;
+	width : 200px;
+	height : 100%;
+	float : left;
+}
+
+.top-45{
+	margin-top : 45px;
+}
+.bottom-item>img,
+.bottom-item>p,
+.bottom-item>span{
+	float : left;
+}
+
+.bottom-item>p{
+	margin-top: 16px;
+	font-size: 13px;
+	color : black;
+}
+
+.bottom-item>span{
+	font-size : 12px;
+	color : #D8D1CB;
+}
+/*  底部   */
+.footer{
+	width: 100%;
+	min-width: 1000px;
+	height: 222px;
+	background: #25292e;
+	color: #5c5c5c;
+}
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+}
+/*上部*/
+.food_top{
+	width: 100%;
+	height: 44px;
+	padding-top: 40px;
+}
+/*   左   */
+.iphone{
+	background: url(../images/icon.png?v1503) no-repeat -175px 0;
+	position: relative;
+	float: left;
+	width: 194px;
+	height: 44px;
+	display: block;
+}
+.iphone:hover{
+	color: #aaa;
+}
+.iphone:hover .qr_code{
+	display: block;
+}
+.iphone>p{
+	width: 136px;
+	margin-left:60px ;
+	line-height: 18px;
+}
+.download{
+	margin-top: 7px;
+}
+.qr_code{
+	position: absolute;
+	background: #fff;
+	left: 0;
+	top: -195px;
+	width: 240px;
+	height: 155px;
+	display: none;
+}
+
+.code_left{
+	width: 98px;
+	height: 95px;
+	float: left;
+	border-right: 1px solid #d9d9d9;
+	padding-right:22px ;
+	background: url(../images/icon.png?v1503) no-repeat -99px -47px ;
+}
+.code_right{
+	width: 98px;
+	height: 95px;
+	float: right;
+	background: url(../images/icon.png?v1503)no-repeat 0 -47px ;
+}
+.downloads{
+	width: 240px;
+	height: 80px;
+	font-size: 14px;
+	color: #5c5c5c;
+}
+.p_left{
+	float: left;
+	padding-left: 5px;
+	line-height: 60px;
+}
+.p_right{
+	float: right;
+	padding-right:5px ;
+	line-height: 60px;
+}
+/*      右      */
+.procedure{
+	float: right;
+	width: 150px;
+	height: 30px;
+}
+.procedure>ul>li{
+	width: 18px;
+	height: 30px;
+	 margin-left: 27px;
+	 float: right;
+	
+}
+.procedure>ul>li>a{
+	display: block;	
+	height: 20px;
+}
+.bean{
+	width: 18px;
+	background: url(../images/icon.png?v1503) no-repeat -129px 0;
+}
+.bean:hover{
+	background: url(../images/icon.png?v1503) no-repeat -129px -25px;
+}
+.sina{
+	width: 23px;
+	background: url(../images/icon.png?v1503) no-repeat -150px 0;
+}
+.sina:hover{
+	background: url(../images/icon.png?v1503) no-repeat -150px -23px;
+}
+.wechat{
+	 position: relative;
+	width: 26px;
+	background: url(../images/icon.png?v1503) no-repeat -100px 0;
+}
+.wechat:hover{
+	background: url(../images/icon.png?v1503) no-repeat -100px -23px;
+}
+.wechat:hover .wechat_code{
+	display: block;
+}
+.wechat_code{
+	width: 145px;
+    height: 148px;
+    position: absolute;
+    top: -188px;
+    left: -65px;
+    background: url(../images/icon.png?v1503) no-repeat 0 -148px #fff;
+    display: none;
+}
+/*       下      */
+.foot_button{
+	width: 800px;
+	height: 108px;
+	margin-top: 29px;
+	font-size: 12px;
+}
+.toplink {
+    margin-bottom:9px;
+}
+.toplink>a{
+	display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 8px 0 10px;
+    color: #5c5c5c;
+    border-right: 1px solid #5c5c5c;
+}
+#last{
+	border-right:0;
+}
+.foot_button>p{
+    letter-spacing: 3px;
+}
