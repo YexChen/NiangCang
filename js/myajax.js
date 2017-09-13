@@ -89,3 +89,9 @@ function getQueryString(name) {
   // return decodeURIComponent(result[2]);
   return result === null ? null : decodeURIComponent(result[2]);
 }
+function getPageString (page) {
+	var search = location.search.substr(1);
+	var reg = new RegExp("(^|&)" + page + "=([^&]*)(&|$)");
+	var result = search.match(reg);
+	return result === null ? null : decodeURIComponent(result[2]);
+}

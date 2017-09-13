@@ -233,13 +233,16 @@
 /*       图片阴影部分          */
 .instruction{
 	position: absolute;
-	display: block;
+	display: none;
 	width: 316px;
 	height: 316px;
 	left: 0;
 	top: 0;
 	background:rgba(0,0,0,0.6);
 	
+}
+.commodity_picture:hover .instruction{
+	display: block;
 }
 .popular-price{
 	color : #0C6EBA;
