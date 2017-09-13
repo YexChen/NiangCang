@@ -209,8 +209,16 @@
 }
 
 .train{
-	width: 6000px;
+	width: 8000px;
 	height : 100%;
+}
+
+.cur{
+	background-color : black !important;
+}
+
+.train li{
+	float : left;
 }
 
 .train li,
@@ -489,6 +497,11 @@
 	height: 32px;
 	margin : 0 auto;
 	margin-top : 40px;
+	overflow: hidden;
+}
+
+.bottom-center>a{
+	margin-left : 44px;
 }
 
 .bottom-bottom{
@@ -522,4 +535,8 @@
 .bottom-item>span{
 	font-size : 12px;
 	color : #D8D1CB;
+}
+
+#animate-hand{
+	position : absolute;
 }
