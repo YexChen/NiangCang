@@ -4,7 +4,13 @@
 	color : #F5F5F5;
 
 }
+.app{
+	position : relative;
+}
 
+.wrapper{
+	position : relative;
+}
 /* 兼容placeholder */
 　input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color: #FFF; opacity:1; 
@@ -36,6 +42,9 @@ body,
 	height : 1000px;
 }
 
+body{
+	height : 100%;
+}
 .app{
 	overflow: hidden;
 	background-color: #999999;
@@ -171,4 +180,65 @@ body,
 
 .form-a4:hover{
 	background-image: url("./../images/wba.png");
+}
+
+/* 模态框 */
+.modelBox{
+	position : fixed;
+	width : 420px;
+	height: 122px;
+	z-index : 100;
+	top : 260px;
+	left : 410px;
+	opacity : 1;
+}
+
+.modelHead{
+	background-color: #282322;
+	width : 100%;
+	height : 30px;
+	border-left: 1px solid #2B2726;
+	border-right : 1px solid #2B2726;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.modelHead>img:first-child{
+	float : left;
+	margin : 3px 5px;
+}
+
+.modelHead>img{
+	float : right;
+	margin : 5px 10px;
+}
+
+.modelBody{
+	position : relative;
+	background-color: #F1F2F7;
+	width : 100%;
+	height : 87px;
+	border-bottom: 2px solid #4A4646;
+	border-left: 1px solid #2B2726;
+	border-right : 1px solid #2B2726;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.modelBody >p{
+	position : absolute;
+	top : 30px;
+	left : 160px;
+	color : black !important;
+	font-size : 12px;
+}
+
+
+.wrapper2{
+	position : absolute;
+	top : 0px;
+	width : 100%;
+	height : 100%;
+	z-index : 10000;
+	background-color : #707070;
+	background: rgba(0,0,0,0.5);
+	display: none;
 }
