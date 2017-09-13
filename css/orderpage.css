@@ -1,0 +1,92 @@
+.order{
+	width: 1000px;
+}
+.setup{
+	margin: 25px 0 20px 0;
+	height: 26px;
+	width: 78px;
+	background: #7ca8cb;
+	color: #fff;
+	line-height: 26px;
+	text-align: center;
+	cursor: pointer;
+}
+.information{
+	height: 245px;
+	width: 998px;
+	border-top:1px solid #c8c8c8;
+	border-bottom:1px solid #c0c0c0;
+}
+.i1{
+	margin-top: 25px;
+	width: 100%;
+	height: 20px;
+}
+.i1s{
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+}
+.i1s:hover{
+	color:#96b2cf;
+}
+.i2{
+	margin: 40px 0 20px 0;
+	width: 100%;
+	height: 20px;
+}
+.i2s{
+	height: 15px;
+	line-height: 15px;
+	display: inline-block;
+}
+.i2s:hover{
+	background: #7ca8cb;
+	color: #fff;
+	border-radius: 2px;
+}
+.i3{
+	margin-bottom: 7px;
+	width: 1000px;
+	height: 22px;
+}
+.i3s{
+	width: 57px;
+	height: 22px;
+	background: #dedede;
+	float: right;
+	font-size: 12px;
+	line-height: 22px;
+	text-align: center;
+}
+.search{
+	width: 176px;
+	height: 20px;
+	float: right;
+}
+.i3sb{
+	width: 40px;
+	height: 22px;
+	background: #6696b7;
+	color: #fff;
+	float: right;
+}
+.i4{
+	width: 1000px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.tips{
+	width: 1000px;
+	height: 205px;
+}
+.page{
+	width: 400px;
+	height: 55px;
+	float: right;
+	line-height: 55px;
+	text-align: center;
+}
+
+
