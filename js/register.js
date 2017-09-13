@@ -107,14 +107,16 @@ oSubmit.onclick = function(){
 	let rg = new XMLHttpRequest();
 	rg.onreadystatechange = function(){
 		if(rg.readyState == rg.DONE){
-
+			let json = JSON.parse(this.responseText);
+			console.log(json);
+			showModel(json.message);
 		}
 	}
 	rg.open("POST","http://h6.duchengjiu.top/shop/api_user.php");
 	rg.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
-	rg.send();
+	rg.send(`status=register&username=${phone.value}&password=${oPassword.value}`);
 
 	//跨域请求完毕
-	showModel("注册成功");
+	
 	return;
 }
