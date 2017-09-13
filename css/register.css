@@ -225,8 +225,9 @@ body{
 
 .modelBody >p{
 	position : absolute;
-	top : 30px;
-	left : 160px;
+	top : 40%;
+	left : 35%;
+	margin : 0 auto;
 	color : black !important;
 	font-size : 12px;
 }

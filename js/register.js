@@ -31,6 +31,79 @@ exitBtn.onclick = function(){
 // 密码确认 密码确认一遍
 // 同意条款
 
-let phone = document.querySelector(".group1").querySelector("input");
-let reg = new RegExp(/^1[3458][0-9]{9}$/);
 
+//手机
+let phone = document.querySelector(".group1").querySelector("input");
+//验证码
+let oCT = document.querySelector(".group2").querySelector("input");
+//密码
+let oPassword = document.querySelector(".password").querySelector("input");
+//验证密码
+let oConfirm = document.querySelector(".confirm").querySelector("input");
+//勾选条款
+let oProtocol = document.querySelector(".group3").querySelector("input");
+//提交按钮
+let oSubmit = document.querySelector(".group4").querySelector("button");
+//手机正则
+let reg = new RegExp(/^1[3458][0-9]{9}$/);
+//密码正则
+let reg2 = new RegExp(/^[\w]{6,20}$/);
+//所谓验证码
+let CTcode = "2a55";
+
+
+
+phone.onblur = function(){
+	if(!phone.value.match(reg)){
+		showModel("请您输入真实的手机号码")
+		return;
+	}
+}
+
+oCT.onblur = function(){
+	if(oCT.value!=CTcode){
+		showModel("验证码错误，请您重新输入！");
+		return;
+	}
+}
+
+oPassword.onblur = function(){
+	if(!oPassword.value.match(reg2)){
+		showModel("密码为6-20位，不能包含特殊字符~")
+		return;
+	}
+}
+
+oConfirm.onblur = function(){
+	if(oPassword.value!=oConfirm.value){
+		showModel("您输入的密码不一致");
+		return;
+	}
+}
+
+//验证完所有条件，进行上传
+oSubmit.onclick = function(){
+	if(!phone.value.match(reg)){
+		showModel("请您输入真实的手机号码")
+		return;
+	}
+	else if(oCT.value!=CTcode){
+		showModel("验证码错误，请您重新输入！");
+		return;
+	}
+	else if(!oPassword.value.match(reg2)){
+		showModel("密码为6-20位，不能包含特殊字符~")
+		return;
+	}
+	else if(oPassword.value!=oConfirm.value){
+		showModel("您输入的密码不一致");
+		return;
+	}
+	else if(!oProtocol.checked){
+		showModel("请同意良仓注册条款，谢谢！");
+		return;
+	}
+	//这里写跨域请求部分
+	showModel("注册成功");
+	return;
+}
