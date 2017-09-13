@@ -36,7 +36,7 @@ p{
 	position: relative;
 	overflow: hidden;
 }
-.big_pictures>ul{
+.pic{
 	position: absolute;
 	height: 437px;
 	width: 2000px;
@@ -92,7 +92,7 @@ p{
 .thumbnail>ul>li{
 	width: 63px;
 	height: 63px;
-	border: 1px solid transparent;
+	border: 1px solid white;
 	margin-left: 7px;
 	float: left;
 }
