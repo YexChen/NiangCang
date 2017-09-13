@@ -148,6 +148,7 @@
 }
 .screening:hover .prices{
 	display: block;
+	z-index: 99;
 }
 .prices>li>a{
 	display: block;
@@ -161,6 +162,11 @@
     text-align: left;
      background: #fff;
 }
+.prices>li>a:hover{
+	background-color: #323232;
+	color: #fff;
+}
+
 #last_one{
 	border-bottom:0;
 }
