@@ -28,12 +28,19 @@ acquire.onclick = function(){
 	localStorage.phone = phone.value;
 	localStorage.centificateCode = getCTcode();
 	alert(`来自您的iphone:
-			您的验证码为：${localStorage.centificateCode},
+			【良仓】您的验证码为：${localStorage.centificateCode},
 			如果不是本人操作，请联系良仓客服中心
 		`);
 }
 
-
+//验证密码
+let oPassword = document.querySelector(".password");
+let oReg = new RegExp(/^[\w]*$/);
+oPassword.onblur = function(){
+	if(!oPassword.value.match(oReg)){
+		alert("您的密码有不合法字符，请核对后再次输入");
+	}
+}
 
 
 //登陆验证
@@ -46,9 +53,23 @@ let centi = document.querySelector(".btm");
 		console.log(localStorage.phone);
 		console.log(oCode);
 		console.log(localStorage.centificateCode);
-		if(phone.value==localStorage.phone&&oCode==localStorage.centificateCode){
+		if(phone.value==localStorage.phone&&oCode==localStorage.centificateCode&&oPassword.value.match(oReg)){
 			//这里添加后续ajax请求
-			alert("登陆成功！");
+			let lg = new XMLHttpRequest();
+
+			lg.onreadystatechange = function(){
+				if(this.readyState==this.DONE){
+					let json = JSON.parse(this.responseText);
+					console.log(json);
+					if(localStorage.token)	localStorage.removeItem("token");
+					localStorage.token=json.data.token;
+					alert(json.message);
+				}
+			}
+
+			lg.open("POST","http://h6.duchengjiu.top/shop/api_user.php");
+			lg.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
+			lg.send(`status=login&username=${phone.value}&password=${oPassword.value}`);
 		}
 		else{
 			alert("登陆失败，请验证用户名和密码");

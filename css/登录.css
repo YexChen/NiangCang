@@ -114,3 +114,7 @@
 	width: 100px;
 	text-align: center;
 }
+
+.temp-boder{
+	border-bottom : 1px solid black;
+}
