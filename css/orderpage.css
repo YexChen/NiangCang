@@ -82,11 +82,14 @@
 	height: 205px;
 }
 .page{
-	width: 400px;
+	width: 350px;
 	height: 55px;
 	float: right;
 	line-height: 55px;
 	text-align: center;
+}
+.ps4{
+	color: #ff0000;
 }
 
 
