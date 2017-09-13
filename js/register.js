@@ -104,6 +104,17 @@ oSubmit.onclick = function(){
 		return;
 	}
 	//这里写跨域请求部分
+	let rg = new XMLHttpRequest();
+	rg.onreadystatechange = function(){
+		if(rg.readyState == rg.DONE){
+
+		}
+	}
+	rg.open("POST","http://h6.duchengjiu.top/shop/api_user.php");
+	rg.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+	rg.send();
+
+	//跨域请求完毕
 	showModel("注册成功");
 	return;
 }
