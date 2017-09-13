@@ -100,3 +100,93 @@ function afterAjax1(){
 		`
 	}
 }
+
+//更新购物车里面的内容
+let haveOrNot = undefined;
+//购物车内容
+let oMyChart = null;
+//购物车肉体
+let oChartBody = document.querySelector(".chart-wrapper");
+
+if(localStorage.token){
+	let gw = new XMLHttpRequest();
+
+	gw.onreadystatechange = function(){
+		if(this.readyState==this.DONE){
+			let json = JSON.parse(this.responseText);
+			console.log(json);			
+			if(json.code == 1){
+				haveOrNot = false;
+				return;
+			}
+			else{
+				haveOrNot = true;
+			}
+			oMyChart = json.data;
+			dealChart();
+		}
+	}
+
+	gw.open("GET",`http://h6.duchengjiu.top/shop/api_cart.php?token=${localStorage.token}`);
+	gw.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
+	gw.send();
+}
+
+function dealChart(){
+	//如果有商品，推上货架，不然推上另外的架子
+	if(haveOrNot){
+		putOnMarket();
+	}
+	else{
+		putOnShell();
+	}
+}
+
+function putOnMarket(){
+	for(let i =0;i<oMyChart.length;i++){
+		oChartBody.innerHTML += `
+		<div class="slide-3">
+			<div class="slide-3-inner">
+				<img src=${oMyChart[i].goods_thumb}>
+				<div class="nav-slide-text">
+					<p class = "temp-font-grey">${oMyChart[i].goods_name}</p>
+					<p>一只</p>
+					<p>数量&nbsp;:&nbsp;${oMyChart[i].goods_number}件</p>
+				</div>
+				<span>￥${oMyChart[i].goods_price}</span>
+			</div>
+		</div>
+		`
+	}
+	oChartBody.innerHTML +=`
+	<div class = "slide-2">
+		<p>查看我的购物车</p>
+	</div>
+	`
+}
+
+function putOnShell(){
+	oChartBody.innerHTML +=`
+	<div class="slide-1">
+		<p>你的购物车暂时没有商品...</p>
+	</div>
+	<div class = "slide-2">
+		<p>快去采购良仓商品吧！</p>
+	</div>
+	`
+}
+
+//开始做小手队列动画//
+let hand = document.querySelector("#animate-hand");
+
+hand.onmouseover = function team(){
+	animate(hand,{"marginLeft":"0px"},500,function(){
+	animate(hand,{"marginLeft":"10px"},500,function(){
+		animate(hand,{"marginLeft":"0px"},500,function(){
+			animate(hand,{"marginLeft":"10px"},500,function(){
+				animate(hand,{"marginLeft":"0px"},500);
+			});
+		});
+	})});
+	
+}
