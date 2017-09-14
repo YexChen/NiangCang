@@ -79,7 +79,6 @@ let json;
 newRequest.onreadystatechange = function(){
 	if(newRequest.readyState == newRequest.DONE){
 		json = JSON.parse(newRequest.responseText);
-		console.log(`${json.data.imageSrc["image"]}`);
 		afterAjax1();
 	}
 }
@@ -113,8 +112,7 @@ if(localStorage.token){
 
 	gw.onreadystatechange = function(){
 		if(this.readyState==this.DONE){
-			let json = JSON.parse(this.responseText);
-			console.log(json);			
+			let json = JSON.parse(this.responseText);	
 			if(json.code == 1){
 				haveOrNot = false;
 				return;
