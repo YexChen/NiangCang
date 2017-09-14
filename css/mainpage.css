@@ -593,3 +593,17 @@
 #animate-hand{
 	position : absolute;
 }
+
+/* 给用户添加头像，名字的css */
+.myTouxiang{
+	display : block;
+	margin-top : 13px !important;
+	width : 30px !important;
+	height: 30px !important;
+	border-radius: 50%;
+	background-image: url("./../images/defaultFace.png");
+	background-repeat :no-repeat;
+	background-size: 100% 100%;
+	z-index : 100000000;
+	background-color: ;
+}
