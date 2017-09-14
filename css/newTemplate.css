@@ -1,3 +1,7 @@
+img{
+	cursor : pointer;
+}
+
 .main-nav{
 	position : fixed;
 	background-color: white;

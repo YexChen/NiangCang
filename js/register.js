@@ -109,9 +109,7 @@ oSubmit.onclick = function(){
 		if(rg.readyState == rg.DONE){
 			let json = JSON.parse(this.responseText);
 			showModel(json.message);
-			if(!history.back()){
-				location.href = "./../template/mainpage.html";
-			}
+			location.href = "./../template/登录.html";
 		}
 	}
 	rg.open("POST","http://h6.duchengjiu.top/shop/api_user.php");

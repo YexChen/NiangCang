@@ -98,7 +98,50 @@ function afterAjax1(){
 				</div>
 		`
 	}
+	bindSlideEvent();
 }
+
+//给nav-slide-item添加点击事件，跳转页面
+function bindSlideEvent(){
+	let slides = document.querySelectorAll(".nav-slide-item");
+	console.log(slides);
+	for(let i=0;i<slides.length;i++){
+		slides[i].onclick = function(){
+			console.log(i);
+			switch (i) {
+				case 0:
+					location.href= "./../template/商品列表.html?cat_id=45";
+					break;
+				case 1:
+					location.href= "./../template/商品列表.html?cat_id=55";
+					break;
+				case 2:
+					location.href= "./../template/商品列表.html?cat_id=62";
+					break;
+				case 3:
+					location.href= "./../template/商品列表.html?cat_id=69";
+					break;
+				case 4:
+					location.href= "./../template/商品列表.html?cat_id=77";
+					break;
+				case 5:
+					location.href= "./../template/商品列表.html?cat_id=82";
+					break;
+				case 6:
+					location.href= "./../template/商品列表.html?cat_id=92";
+					break;
+				case 9:
+					location.href= "./../template/商品列表.html?cat_id=125";
+					break;
+				default:
+					
+					break;
+			}
+		}
+	}
+}
+
+
 
 //更新购物车里面的内容
 let haveOrNot = undefined;
@@ -158,9 +201,15 @@ function putOnMarket(){
 	}
 	oChartBody.innerHTML +=`
 	<div class = "slide-2">
-		<p>查看我的购物车</p>
+		<p class = "viewCart">查看我的购物车</p>
 	</div>
 	`
+	//查看购物车跳转
+	let oViewCart = document.querySelector(".viewCart");
+
+	oViewCart.onclick = function(){
+		location.href = "./../template/购物车.html";
+	}
 }
 
 function putOnShell(){
@@ -188,3 +237,4 @@ hand.onmouseover = function team(){
 	})});
 	
 }
+
