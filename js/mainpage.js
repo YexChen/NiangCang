@@ -91,7 +91,7 @@ lb.onreadystatechange = function(){
 	}
 }
 
-lb.open("GET","http://h6.duchengjiu.top/shop/api_goods.php");
+lb.open("GET","http://h6.duchengjiu.top/shop/api_goods.php?pagesize=12");
 lb.send();
 
 //改变图片源
