@@ -23,12 +23,10 @@
 				<a href="register.html" class = "nav-login">注册</a>
 				<span>|</span>
 				<a href="#" class = "chart">购物车
-					<div class="slide-1">
-						<p>你的购物车暂时没有商品...</p>
-					</div>
-					<div class = "slide-2">
-						<p>快去采购良仓商品吧！</p>
-					</div>
+					<!-- 第二次改动内容 -->
+						<div class="chart-wrapper">
+						</div>
+					<!-- 第二次改动完毕 -->
 				</a>
 				<span>|</span>
 				<a href="#" class = "message">消息
@@ -111,7 +109,6 @@
 					<li><a href="">推荐</a></li>
 					<li><a href="">品牌</a></li>
 				</ul>
-				
 				<div class="screening">
 					价格筛选
 					<span class="triangles"></span>
@@ -127,7 +124,7 @@
 			</div>	
 			<!------------------图片列表------------------>
 			<ul class="our_shop">
-				<!--<li id = "firsts">
+				<li id = "firsts">
 					<div class="commodity_picture">
 						<a href="" class = "instruction">
 							<p class = "popular-price">￥41.00</p>
@@ -171,11 +168,11 @@
 						<a href="" class="brands"><img class="insets" src="../images/489.jpg"/>读小库</a>
 						<a href="" class ="heart_shaped"></a>
 					</div>
-				</li>-->
+				</li>
 			</ul>
 			<!----------第几页--------------->
 			<div class="pager">
-				<a class="checked" href="">1</a>
+				<a class="checked">1</a>
 				<a class="checked" href="">2</a>
 				<a class="checked" href="">3</a>
 				<a class="next_page" href="">下一页</a>
@@ -188,7 +185,7 @@
 		<!---------------良仓商品--------------------->
 		<div class = "main-bottom">
 				<div class="bottom-center">
-					<img src="./../images/hand.png">
+					<img src="./../images/hand.png"  id = "animate-hand">
 					<a href="#">良仓商店&nbsp;/&nbsp;OUR&nbsp;SHOP</a>
 				</div>
 				<div class="bottom-bottom">
@@ -271,12 +268,9 @@
 				</div>
 			</div>
 		</div>
-		<script src="../js/myajax.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../js/商品列表ajax.js" type="text/javascript" charset="utf-8"></script>
 		<!-- 整合新的js -->
 		<script type="text/javascript" src = "./../js/animate.js"></script>
 		<script type="text/javascript" src = "./../js/newTemplate.js"></script>
 		<!-- js整合完毕 -->
-		
 	</body>
 </html>
