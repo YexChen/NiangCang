@@ -14,7 +14,7 @@
 	<title>良仓</title>
 </head>
 <body>
-	<div class="app">
+	<div class="app" id = "app">
 		<div class="wrapper">
 			<!--第一次整合吸顶效果-->
 			<div class="nav-blank"></div>
@@ -107,42 +107,6 @@
 								<th>操作</th>	
 							</thead>	
 							<tbody class="order-tb">
-								<tr class="tr-1">
-									<td> 
-										<sup>
-											<input type="checkbox" name="td-i" id="td-i"/>
-										</sup>
-										<img src="./../images/p1.jpg"/>
-									</td>
-									<td class="tr-2">
-										<p>阿迪达斯ADIDAS 2017秋 男子 NOT SPORTS SPECIFIC系列 夹克 S98796 2XL</p>
-									</td>
-									<td>
-										<button class="b1">-</button>
-										1
-										<button class="b1">+</button>
-									</td>
-									<td>299.00</td>
-									<td>299.00</td>
-									<td><a href="">删除</a></td>
-								</tr>
-								<tr class="tr-last">
-									<td>
-										<sup>
-											<input type="checkbox" name="td-i" id="td-i"/>
-										</sup>
-										<img src="./../images/p2.jpg"/>
-									</td>
-									<td class="tr-2">安踏男装2016冬款男装越野户外冲锋衣棉服两件套运动服男15646671官方旗舰店 -3 一品红 L(175/92A)</td>
-									<td>
-										<button class="b1">-</button>
-										1
-										<button class="b1">+</button>
-									</td>
-									<td>339.00</td>
-									<td>339.00</td>
-									<td><a href="">删除</a></td>
-								</tr>
 							</tbody>
 						</table>
 					</div>
@@ -246,5 +210,9 @@
 	<script type="text/javascript" src = "./../js/animate.js"></script>
 	<script type="text/javascript" src = "./../js/newTemplate.js"></script>
 	<!-- js整合完毕 -->
+	<!-- 整合购物车专用ajax -->
+	<script type="text/javascript" src = "./../js/购物车ajax.js"></script>
+	<!-- 整合购物车专用ajax整合完毕 -->
+
 </body>
 </html>
