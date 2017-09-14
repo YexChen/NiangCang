@@ -139,6 +139,9 @@ function dataChangeCallback(i,goodsCount){
 
 
 // 第一次模拟了数据的动态绑定，感觉乱糟糟的
+
+
+
 // 然后就是删除购物车内容
 
 
