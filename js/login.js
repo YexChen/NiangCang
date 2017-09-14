@@ -63,6 +63,8 @@ let centi = document.querySelector(".btm");
 					console.log(json);
 					if(localStorage.token)	localStorage.removeItem("token");
 					localStorage.token=json.data.token;
+					if(localStorage.username)	localStorage.removeItem("username");
+					localStorage.username=json.data.username;
 					alert(json.message);
 					if(!history.back()){
 						location.href = "./../template/mainpage.html";

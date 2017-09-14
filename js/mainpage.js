@@ -87,6 +87,7 @@ lb.onreadystatechange = function(){
 		let json = JSON.parse(this.responseText);
 		imageData = json.data;
 		changeImage();
+		blicktoDetail();
 	}
 }
 
@@ -109,4 +110,13 @@ function changeImage(){
 	}
 }
 
+//绑定点击图片跳转到详情
+function blicktoDetail(){
+	let blinkImages = document.querySelectorAll(".popular-cell");
+	for(let i=0;i<blinkImages.length;i++){
+		blinkImages[i].onclick = function(){
+			location.href = `./../template/商品详情页.html?goods_id=${imageData[i].goods_id}`;
+		}
+	}
+}
 

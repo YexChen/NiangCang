@@ -217,8 +217,19 @@ function deleteHandler(){
 					dataChangeCallback(i,goodsCount);
 					}
 				}
-			}
-		}
+				//从数据库里面更新
+				let gxgwc = new XMLHttpRequest();
+				gxgwc.onreadystatechange = function(){
+					if(this.readyState==this.DONE){
+						let json = JSON.parse(this.responseText);
+					}
+				}
+
+				gxgwc.open("POST",`http://h6.duchengjiu.top/shop/api_cart.php?token=${localStorage.token}`);
+				gxgwc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+				gxgwc.send(`goods_id=${localJson.data.jsonId[i]}&&number=${localJson.data.numbers[i]}`);
+					}
+				}
 		// 然后删除数据
 	}
 }
@@ -240,7 +251,7 @@ function submitAjax(){
 		gxgwc.onreadystatechange = function(){
 			if(this.readyState==this.DONE){
 				let json = JSON.parse(this.responseText);
-				location.href = "订单.html";
+				location.href = "chart.html";
 			}
 		}
 

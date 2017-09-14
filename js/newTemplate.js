@@ -142,7 +142,6 @@ function bindSlideEvent(){
 }
 
 
-
 //更新购物车里面的内容
 let haveOrNot = undefined;
 //购物车内容
@@ -238,3 +237,19 @@ hand.onmouseover = function team(){
 	
 }
 
+
+//判定用户是否登陆，如果没有，显示登陆注册框，
+// 如果有，则显示用户头像和名字
+if(!localStorage.token){
+	document.querySelectorAll(".nav-login")[0].style.display = "block";
+	document.querySelectorAll(".nav-login")[1].style.display = "block";
+	document.querySelector(".myTouxiang").style.display = "none";
+	document.querySelector(".myAccount").style.display = "none";
+}
+else{
+	document.querySelectorAll(".nav-login")[0].style.display = "none";
+	document.querySelectorAll(".nav-login")[1].style.display = "none";
+	document.querySelector(".myTouxiang").style.display = "block";
+	document.querySelector(".myAccount").style.display = "block";
+	document.querySelector(".myAccount").innerText = localStorage.username;
+}
