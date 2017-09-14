@@ -108,8 +108,8 @@ oSubmit.onclick = function(){
 	rg.onreadystatechange = function(){
 		if(rg.readyState == rg.DONE){
 			let json = JSON.parse(this.responseText);
-			console.log(json);
 			showModel(json.message);
+			location.href = "./../template/登录.html";
 		}
 	}
 	rg.open("POST","http://h6.duchengjiu.top/shop/api_user.php");
