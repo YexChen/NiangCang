@@ -22,8 +22,8 @@
 			<div class="nav">
 				<div class="nav-head"></div>
 				<div class="nav-right">
-					<a href="#" class = "nav-login">登陆</a>
-					<a href="#" class = "nav-login">注册</a>
+					<a href="登录.html" class = "nav-login">登陆</a>
+					<a href="register.html" class = "nav-login">注册</a>
 					<span>|</span>
 					<a href="#" class = "chart">购物车
 						<!-- 第二次改动内容 -->
@@ -64,7 +64,7 @@
 			<!-- nav下拉栏添加完毕-->
 			<div class="main">
 				<div class="main-nav">
-					<a href="#">首页</a>
+					<a href="mainpage.html">首页</a>
 					<a href="#" class = "main-nav-center slide-shop">商店</a>
 					<a href="#" class = "main-nav-center">杂志</a>
 					<a href="#" class = "main-nav-center">分享</a>
@@ -85,7 +85,7 @@
 					<div class="bodyer_left">
 						<div class = "current_position">
 							<a href="mainpage.html" class="home_page">良仓></a>
-							<a href="" class="classification">文化></a>
+							<a href="商品列表.html" class="classification">文化></a>
 							<a class="presentation">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪 </a>
 						</div>
 						<!-----轮播图-------->
@@ -123,7 +123,7 @@
 								<p class = "particulars">《知日・这就是三岛由纪夫》特集 ｜一个无法被定义的日本大文豪 </p>
 								<div class="money">
 									<p>价格：</p>
-									<h2>￥41.00元</h2>
+									<h2 class = "much">￥41.00元</h2>
 								</div>
 								<div class="small_icon">
 									<p class="free_shipping">免运费</p>
@@ -131,7 +131,7 @@
 								</div>
 								<div class="quantity">
 									<p>数量：</p>
-									<input type="text"value="一本" />
+									<input type="text" checked value="一本" />
 								</div>
 								<div class="plus_minus">
 									<p>数量：</p>
@@ -139,17 +139,18 @@
 									<input type="text" class="numbers" id="numbers" value="1" />
 									<input type="button"  class="subtraction" id="subtraction" value="+" />
 								</div>
-								<a href="" class="purchasing">立即购买</a>
+								<a class="purchasing">立即购买</a>
 								<div class="chaining">
-									<a href="" class="shopping_cart"><p>加入购物车</p></a>
+									<a class="shopping_cart"><p>加入购物车</p></a>
 									<a href="" class="sharing"><p>分享</p></a>
 								</div>
 							</div>
 							
 						</div>
+						
 						<!------详细介绍--------->
 						<div class="particula">
-							<img src="../images/394131.jpg"/>
+							<div class = "abc"></div>
 							<p class = "content_introduction">专门关注日系内容的超人气品牌「知日 ZHIJAPAN」推出《知日》特集第45弹 《知日・这就是三岛由纪夫》特集！</p>
 						</div>
 						<p class="format">开本：16开、25.6×18.4×1cm</p>
@@ -277,6 +278,8 @@
 		</div>
 	</div>
 	<!-- 整合新的js -->
+	<script src="../js/myajax.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/商品详情页.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src = "./../js/animate.js"></script>
 	<script type="text/javascript" src = "./../js/newTemplate.js"></script>
 	<!-- js整合完毕 -->
