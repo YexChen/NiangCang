@@ -142,7 +142,6 @@ function bindSlideEvent(){
 }
 
 
-
 //更新购物车里面的内容
 let haveOrNot = undefined;
 //购物车内容
