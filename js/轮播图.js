@@ -20,6 +20,7 @@ function Slideshow (slideshow) {
 }
 Slideshow.prototype.motions = function  () {
 	var self = this;
+	clearInterval(this.timer);
 	this.timer = setInterval(function  () {
 		self.left -= self.index;
 		self.fromes++;
