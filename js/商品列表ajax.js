@@ -66,7 +66,7 @@ var pagernumber = oPagerNumber.innerHTML;
 				var obj = data[i];
 				oOurShop.innerHTML +=`<li><div class="commodity_picture">
 				<img class="big_graph" src = "${obj.goods_thumb}"/>
-				<a href="商品详情页.html?goods_id=${obj.goods_id}" class = "instruction">
+				<a href="商品详情页.html?goods_id=${obj.goods_id}&page=${obj.page}" class = "instruction">
 				<p class = "popular-price">\¥${obj.price}</p>
 				<h3 class = "popular-header">${obj.goods_name}</h3>
 				<p class="popular-intro">${obj.goods_desc}</p>
