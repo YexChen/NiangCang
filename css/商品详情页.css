@@ -49,12 +49,13 @@ p{
 	float: left;
 	
 }
-.first_picture{
-	background: url(../images/394131.jpg)no-repeat;
+.first_pictures{
+	width: 344px;
+	/*background: url(../images/394131.jpg)no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: contain;*/
 }
-.second_picture{
+/*.second_picture{
 	background: url(../images/394122.jpg)no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -63,7 +64,7 @@ p{
 	background: url(../images/394123.jpg)no-repeat;
 	background-position: center;
 	background-size: contain;
-}
+}*/
 /*    小图     */
 .thumbnail{
 	width: 249px;
@@ -142,7 +143,7 @@ p{
 .particulars{
 	height: 54px;
 	line-height: 27px;
-	font-size: 18px;
+	font-size: 16px;
 	color: #333333;
 	margin-top: 2px;
 }
@@ -289,7 +290,10 @@ p{
 	width: 720px;
 	padding-top: 48px;
 }
-.particula>img{
+.abc{
+	width: 720px;
+}
+.big.pc{
 	width: 720px;
 }
 .content_introduction{

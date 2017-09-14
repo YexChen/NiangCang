@@ -32,7 +32,11 @@
     var queryString = myajax._queryjson2querystring(queryJSON);
     //配置
     //http://h6.duchengjiu.top/shop/api_cat.php?a=1&b=2
-    console.log(queryString);
+ if (localStorage.page) {
+ 	localStorage.removeItem("page");
+ }
+ localStorage.page = queryJSON.page?queryJSON.page:1;
+// console.log( localStorage.page);
     xhr.open('GET', URL + "?" + queryString);
     //发送
     xhr.send(null);
@@ -88,10 +92,4 @@ function getQueryString(name) {
   // if (result === null) return null;
   // return decodeURIComponent(result[2]);
   return result === null ? null : decodeURIComponent(result[2]);
-}
-function getPageString (page) {
-	var search = location.search.substr(1);
-	var reg = new RegExp("(^|&)" + page + "=([^&]*)(&|$)");
-	var result = search.match(reg);
-	return result === null ? null : decodeURIComponent(result[2]);
 }
