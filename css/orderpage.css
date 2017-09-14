@@ -91,5 +91,23 @@
 .ps4{
 	color: #ff0000;
 }
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table,td {
+  border: 1px solid orange;
+  padding: 10px;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+table img {
+  border-radius: 50%;
+  width: 100px;
+}
 
 

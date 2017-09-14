@@ -111,12 +111,14 @@
 							<span class = "triangle"></span>
 						</div>
 						<div class="new-address-item" id="address2">
-							<form action="">
+							<form action="" id="form1">
 								<div class="form-group2 address-group1">
-									<label for="">收货人姓名</label><input type="text" name="" class = "address-input1">
+									<label for="">收货人姓名</label><input type="text" name="" class = "address-input1" placehloder="姓名">
 								</div>
 								<div class="form-group2 address-group2">
-									<label>省/市</label><select></select><select></select>
+									<label>省/市</label>
+									<input type="text" class="province" placeholder="请输入省份"/>
+									<input type="text" class="city" placeholder="请输入城市"/>
 								</div>
 								<div class="form-group2 address-group3">
 									<label>详细地址</label><input type="text" name="">
@@ -125,7 +127,7 @@
 									<label>手机号码</label><input type="text" name="">
 								</div>
 								<div class="form-group2 address-group5">
-									<a href="#">保存地址</a>
+									<input type="button" name="" id="preservation" value="保存地址"/>
 								</div>
 							</form>
 						</div>
@@ -266,6 +268,7 @@
 	<!-- 整合新的js -->
 	<script type="text/javascript" src = "./../js/animate.js"></script>
 	<script type="text/javascript" src = "./../js/newTemplate.js"></script>
+	<script type="text/javascript" src = "./../js/myajax.js"></script>
 	<script type="text/javascript" src = "./../js/hide.js"></script>
 	<!-- js整合完毕 -->
 </body>
