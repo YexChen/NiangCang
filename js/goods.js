@@ -49,7 +49,7 @@ var oshopping = document.querySelector(".shopping_cart");
 oshopping.onclick = function  () {
 	
 	if (localStorage.token == undefined) {
-	location.href = "登录.html"
+	location.href = "login.html"
 	} else{
 		console.log("aaa");
 		myajax.post("http://h6.duchengjiu.top/shop/api_cart.php?token="+localStorage.token,
@@ -65,14 +65,14 @@ oshopping.onclick = function  () {
 var opurchasing = document.querySelector(".purchasing");
 opurchasing.onclick = function  () {
 	if (localStorage.token == undefined) {
-	location.href = "登录.html"
+	location.href = "login.html"
 	} else{
 		myajax.post("http://h6.duchengjiu.top/shop/api_cart.php?token="+localStorage.token,
 		{goods_id,number:1},
 			 function(err, responseText) {
           var json = JSON.parse(responseText);
           if (json.code === 0) {
-            location.href="订单.html";
+            location.href="order.html";
            }
 		})
 	}
