@@ -115,7 +115,7 @@ function blicktoDetail(){
 	let blinkImages = document.querySelectorAll(".popular-cell");
 	for(let i=0;i<blinkImages.length;i++){
 		blinkImages[i].onclick = function(){
-			location.href = `./../template/商品详情页.html?goods_id=${imageData[i].goods_id}`;
+			location.href = `./../template/goods.html?goods_id=${imageData[i].goods_id}`;
 		}
 	}
 }

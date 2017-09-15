@@ -110,28 +110,28 @@ function bindSlideEvent(){
 			console.log(i);
 			switch (i) {
 				case 0:
-					location.href= "./../template/商品列表.html?cat_id=45";
+					location.href= "./../template/list.htmlcat_id=45";
 					break;
 				case 1:
-					location.href= "./../template/商品列表.html?cat_id=55";
+					location.href= "./../template/list.html?cat_id=55";
 					break;
 				case 2:
-					location.href= "./../template/商品列表.html?cat_id=62";
+					location.href= "./../template/list.html?cat_id=62";
 					break;
 				case 3:
-					location.href= "./../template/商品列表.html?cat_id=69";
+					location.href= "./../template/list.html?cat_id=69";
 					break;
 				case 4:
-					location.href= "./../template/商品列表.html?cat_id=77";
+					location.href= "./../template/list.html?cat_id=77";
 					break;
 				case 5:
-					location.href= "./../template/商品列表.html?cat_id=82";
+					location.href= "./../template/list.html?cat_id=82";
 					break;
 				case 6:
-					location.href= "./../template/商品列表.html?cat_id=92";
+					location.href= "./../template/list.html?cat_id=92";
 					break;
 				case 9:
-					location.href= "./../template/商品列表.html?cat_id=125";
+					location.href= "./../template/list.html?cat_id=125";
 					break;
 				default:
 					
@@ -207,7 +207,7 @@ function putOnMarket(){
 	let oViewCart = document.querySelector(".viewCart");
 
 	oViewCart.onclick = function(){
-		location.href = "./../template/购物车.html";
+		location.href = "./../template/shoppingcar.html";
 	}
 }
 
