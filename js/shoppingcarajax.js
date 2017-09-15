@@ -37,7 +37,7 @@ let localJson = {
 //没登陆的送去登陆
 if(!localStorage.token){
 	alert("您还未登录");
-	location.href = "./../template/登录.html";
+	location.href = "./../template/login.html";
 }
 
 let gwc = new XMLHttpRequest();
