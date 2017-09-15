@@ -5,7 +5,7 @@ myajax.get('http://h6.duchengjiu.top/shop/api_cat.php',{},function(error,respons
 	var data =json.data;
 	for (var i = 0;i<data.length;i++) {
 		var obj = data[i];
-		oLi[i+1].innerHTML =`<a href="商品列表.html?cat_id=${obj.cat_id}" >${obj.cat_name}</a>`;		
+		oLi[i+1].innerHTML =`<a href="list.html?cat_id=${obj.cat_id}" >${obj.cat_name}</a>`;		
 	}
 });
 var cat_id = getQueryString('cat_id');
@@ -17,7 +17,7 @@ myajax.get('http://h6.duchengjiu.top/shop/api_goods.php',{cat_id:cat_id},functio
 		var obj = data[i];
 		oOurShop.innerHTML +=`<li><div class="commodity_picture">
 		<img class="big_graph" src = "${obj.goods_thumb}"/>
-		<a href="商品详情页.html?goods_id=${obj.goods_id}&page=${obj.page}" class = "instruction">
+		<a href="goods.html?goods_id=${obj.goods_id}&page=${obj.page}" class = "instruction">
 		<p class = "popular-price">\¥${obj.price}</p>
 		<h3 class = "popular-header">${obj.goods_name}</h3>
 		<p class="popular-intro">${obj.goods_desc}</p>
@@ -69,7 +69,7 @@ for (var k=0;k<oPager.length;k++) {
 				console.log(obj);
 				oOurShop.innerHTML +=`<li><div class="commodity_picture">
 				<img class="big_graph" src = "${obj.goods_thumb}"/>
-				<a href="商品详情页.html?goods_id=${obj.goods_id}" class = "instruction">
+				<a href="goods.html?goods_id=${obj.goods_id}" class = "instruction">
 				<p class = "popular-price">\¥${obj.price}</p>
 				<h3 class = "popular-header">${obj.goods_name}</h3>
 				<p class="popular-intro">${obj.goods_desc}</p>
