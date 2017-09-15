@@ -159,7 +159,7 @@ localStorage.token 保存的token
 	
 
 ------------------改英文------------------
-1.首页 (陈颖轩)	index.html
+1.首页 (陈颖轩)	index.html （改完首页，还要改公共样式）
 2.商品分类页面 （邓浩）list.html
 3.商品详情页 （邓浩）goods.html
 4.登陆页 （陈颖轩）login.html;
