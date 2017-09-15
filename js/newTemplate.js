@@ -110,7 +110,7 @@ function bindSlideEvent(){
 			console.log(i);
 			switch (i) {
 				case 0:
-					location.href= "./../template/list.htmlcat_id=45";
+					location.href= "./../template/list.html?cat_id=45";
 					break;
 				case 1:
 					location.href= "./../template/list.html?cat_id=55";
