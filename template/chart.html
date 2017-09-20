@@ -96,26 +96,29 @@
 						<hr>
 						<img src="./../images/chart-left.png" class = "deli-left">
 						<img src="./../images/chart-right.png" class = "deli-right">
-						<div class="chart-address">
-							<div class="address-top">
-								<p class = "top-p1">用户名</p>
-								<p class = "top-p2">电话号码</p>
-							</div>
-							<div class="address-center">
-								<p class = "center-p1"><span>省份</span><span>城市</span></p>
-								<p class = "center-p2">街道</p>
-							</div>
-							<div class="address-bottom">
-								<p>默认地址</p>	<a href="#">删除</a><a href="#">编辑</a>
-							</div>
-						</div>
+						<ul class = "charts">
+							<!--<li class="chart-address">
+								<div class="address-top">
+									<p class = "top-p1">用户名</p>
+									<p class = "top-p2">电话号码</p>
+								</div>
+								<div class="address-center">
+									<p class = "center-p1"><span>省份</span><span>城市</span></p>
+									<p class = "center-p2">街道</p>
+								</div>
+								<div class="address-bottom">
+									<p>默认地址</p>	<a href="#">删除</a><a href="#">编辑</a>
+								</div>
+							</li>-->
+						</ul>
+						
 						<div class="new-address" id="address1">
 							<img id="inew" src="./../images/chart-checkboxb.png">
 							<label>使用新地址</label>
 							<span class = "triangle"></span>
 						</div>
 						<div class="new-address-item" id="address2">
-							<form action="" id="form1">
+							<form action="" class="form_a1" id="form1">
 								<div class="form-group2 address-group1">
 									<label for="">收货人姓名</label><input type="text" name="" class = "address-input1" placehloder="姓名">
 								</div>
@@ -125,13 +128,13 @@
 									<input type="text" class="city" placeholder="请输入城市"/>
 								</div>
 								<div class="form-group2 address-group3">
-									<label>详细地址</label><input type="text" name="">
+									<label>详细地址</label><input class = "address" type="text" name="">
 								</div>
 								<div class="form-group2 address-group4">
-									<label>手机号码</label><input type="text" name="">
+									<label>手机号码</label><input class = "phone_number" type="text" name="">
 								</div>
 								<div class="form-group2 address-group5">
-									<input type="button" name="" id="preservation" value="保存地址"/>
+									<input type="button" name="" id="preservation" class="preservation" value="保存地址"/>
 								</div>
 							</form>
 						</div>
@@ -273,7 +276,8 @@
 	<script type="text/javascript" src = "./../js/animate.js"></script>
 	<script type="text/javascript" src = "./../js/newTemplate.js"></script>
 	<script type="text/javascript" src = "./../js/myajax.js"></script>
-	<script type="text/javascript" src = "./../js/hide.js"></script>
+	<script src="../js/chart.js" type="text/javascript" charset="utf-8"></script>
+<!--	<script type="text/javascript" src = "./../js/hide.js"></script>-->
 	<!-- js整合完毕 -->
 </body>
 </html> 
